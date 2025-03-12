@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreio e Comprovantes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6LTiOwjNoEKjx54JxdMzcjMI1BONoSOaO2A&s" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://waesteves2.github.io/frete-territorio/rte.png" alt="" width="350">        </header>
+        
+        <main>
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj" placeholder="Digite o CNPJ">
+                </div>
+                <div class="input-field">
+                    <label for="nf">Número da NF:</label>
+                    <input type="text" id="nf" placeholder="Digite o número da NF">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button id="btnTracking" class="btn btn-primary">
+                    <i class="fas fa-map-marked-alt"></i> Consultar Tracking
+                </button>
+                <button id="btnReceipt" class="btn btn-success">
+                    <i class="fas fa-download"></i> Baixar Comprovante
+                </button>
+            </div>
+
+            <div class="result-container">
+                <textarea id="result" readonly></textarea>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
